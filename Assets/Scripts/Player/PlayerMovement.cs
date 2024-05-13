@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void HandleMove() {
-        
+
     }
 
     private void HandleHeadRotation() {

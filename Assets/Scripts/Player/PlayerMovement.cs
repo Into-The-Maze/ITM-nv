@@ -32,10 +32,11 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(forwards)) move.y = 1;
         if (Input.GetKey(backwards)) move.y = -1;
 
-        Vector2 targetVelocity = (move * G.PLAYER_SPEED).normalized; 
+        Vector2 targetVelocity = move * G.PLAYER_SPEED;
 
         rb.velocity = (move != Vector2.zero) ? Vector2.Lerp(rb.velocity, targetVelocity, G.PLAYER_ACCELERATION * Time.deltaTime) :
             Vector2.Lerp(rb.velocity, Vector2.zero, G.PLAYER_DECELERATION * Time.deltaTime);
+
     }//TODO: have G.SPEED be a const used in a separate speed stored in playerstats that is calculated by applying weighting from other stats
 
     private void HandleHeadRotation() {

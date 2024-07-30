@@ -12,8 +12,6 @@ public static class G
     public const float PLAYER_DECELERATION = 4f;
 
     public const float CAMERA_Z_POS = -10f;
-
-    //unused for now, see script in CameraMovement
-    //public const float CAMERA_POS_ADJUST_SPEED = 0.01f;
-    //public const float CAMERA_POS_DISTANCE_FROM_PLAYER = 0.35f;
+    public const float CAMERA_POS_ADJUST_SPEED = 0.1f;
+    public const float CAMERA_POS_DISTANCE_FROM_PLAYER = 0.35f;
 }

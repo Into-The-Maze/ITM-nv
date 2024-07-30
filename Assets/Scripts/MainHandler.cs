@@ -8,6 +8,6 @@ using UnityEngine;
 public class MainHandler : MonoBehaviour
 {
     private void Awake() {
-        
+        K.InitKeybindsFromPlayerprefs();
     }
 }

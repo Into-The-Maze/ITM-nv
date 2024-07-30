@@ -20,19 +20,31 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void FixedUpdate() {
-        
+        HandleMove();
     }
 
     private void HandleMove() {
+        int horizontal = 0;
+        int vertical = 0;
 
+        if (Input.GetKeyDown(left)) horizontal = -1;
+        if (Input.GetKeyDown(right)) horizontal = 1;
+        if (Input.GetKeyDown(forwards)) vertical = 1;
+        if (Input.GetKeyDown(backwards)) vertical = -1;
+
+        rb.AddForce(new Vector2(horizontal, vertical).normalized);
     }
 
     private void HandleHeadRotation() {
-
+        //todo
     }
 
     private void HandleTorsoRotation() {
+        //todo
+    }
 
+    private void HandleLegs() {
+        //todo
     }
 
     private void InitKeybinds() {

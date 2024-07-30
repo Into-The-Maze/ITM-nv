@@ -4,19 +4,19 @@ using UnityEngine;
 
 public static class PSTATS
 {
-    static uint STRENGTH;
-    static WEIGHT_CLASS WEIGHT_CLASS;
-    static uint AGILITY;
-    static double ENERGY;
-    static double MENTAL;
-    static uint PERCEPTION;
-    static uint ADRENALINE;
+    public static uint STRENGTH;
+    public static WEIGHT_CLASS WEIGHT_CLASS;
+    public static uint AGILITY;
+    public static double ENERGY;
+    public static double MENTAL;
+    public static uint PERCEPTION;
+    public static uint ADRENALINE;
 
-    static double WEIGHT;
-    static double MAX_WEIGHT;
+    public static double WEIGHT;
+    public static double MAX_WEIGHT;
 }
 
-enum WEIGHT_CLASS
+public enum WEIGHT_CLASS
 {
     LIGHT,
     MEDIUM,

@@ -10,4 +10,8 @@ public class MainHandler : MonoBehaviour
     private void Awake() {
         K.InitKeybindsFromPlayerprefs();
     }
+
+    private void Update() { 
+
+    }
 }

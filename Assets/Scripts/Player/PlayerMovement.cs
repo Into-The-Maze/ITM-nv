@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private KeyCode left;
     private KeyCode right;
 
+
     private void Awake() {
         InitKeybinds();
     }
@@ -24,16 +25,18 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void HandleMove() {
-        int horizontal = 0;
-        int vertical = 0;
+        Vector2 move = Vector2.zero;
 
-        if (Input.GetKeyDown(left)) horizontal = -1;
-        if (Input.GetKeyDown(right)) horizontal = 1;
-        if (Input.GetKeyDown(forwards)) vertical = 1;
-        if (Input.GetKeyDown(backwards)) vertical = -1;
+        if (Input.GetKey(left)) move.x = -1;
+        if (Input.GetKey(right)) move.x = 1;
+        if (Input.GetKey(forwards)) move.y = 1;
+        if (Input.GetKey(backwards)) move.y = -1;
 
-        rb.AddForce(new Vector2(horizontal, vertical).normalized);
-    }
+        Vector2 targetVelocity = (move * G.SPEED).normalized; 
+
+        rb.velocity = (move != Vector2.zero) ? Vector2.Lerp(rb.velocity, targetVelocity, G.ACCELERATION * Time.deltaTime) :
+            Vector2.Lerp(rb.velocity, Vector2.zero, G.DECELERATION * Time.deltaTime);
+    }//TODO: have G.SPEED be a const used in a separate speed stored in playerstats that is calculated by applying weighting from other stats
 
     private void HandleHeadRotation() {
         //todo

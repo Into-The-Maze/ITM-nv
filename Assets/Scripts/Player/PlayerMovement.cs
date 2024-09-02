@@ -45,7 +45,6 @@ public class PlayerMovement : MonoBehaviour
     private void Update() {
         HandleBodyVisuals();
         HandleMovementType();
-        MyDebug();
     }
 
     private Vector2 movementDirection;
@@ -131,7 +130,7 @@ public class PlayerMovement : MonoBehaviour
     private void HandleMovementType() {
         if (movementDirection == Vector2.zero)
             playerMovementType = PlayerMovementType.Standing;
-        else if (rb.velocity.magnitude < 1f)
+        else if (rb.velocity.magnitude < PSTATS.PLAYER_SPEED)
             playerMovementType = PlayerMovementType.Walking;
         else
             playerMovementType = PlayerMovementType.Sprinting;

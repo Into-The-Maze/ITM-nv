@@ -7,11 +7,10 @@ public static class G
     //Global variables
     //Consts only in here
 
-    public const float PLAYER_SPEED = 1f;
-    public const float PLAYER_ACCELERATION = 5f;
-    public const float PLAYER_DECELERATION = 4f;
-
     public const float CAMERA_Z_POS = -10f;
     public const float CAMERA_POS_ADJUST_SPEED = 0.1f;
     public const float CAMERA_POS_DISTANCE_FROM_PLAYER = 0.35f;
+
+    public const float PLAYER_NECK_ROTATE_CONSTRAINT = 70f;
+    public const float PLAYER_HIP_ROTATE_CONSTRAINT = 80f;
 }

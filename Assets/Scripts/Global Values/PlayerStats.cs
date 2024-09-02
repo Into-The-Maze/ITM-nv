@@ -14,6 +14,12 @@ public static class PSTATS
 
     public static double WEIGHT;
     public static double MAX_WEIGHT;
+
+    public static float PLAYER_SPEED = 1f;
+    public static float PLAYER_ACCELERATION = 5f;
+    public static float PLAYER_DECELERATION = 4f;
+    public static float PLAYER_SPRINT_SPEED_MULTIPLIER = 1.5f;
+    public static float PLAYER_TURN_SPEED = 200f;
 }
 
 public enum WEIGHT_CLASS

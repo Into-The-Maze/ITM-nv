@@ -9,6 +9,7 @@ public static class K
         { "Backwards", KeyCode.S },
         { "Left", KeyCode.A },
         { "Right", KeyCode.D },
+        { "Sprint", KeyCode.LeftShift },
 
 
     };

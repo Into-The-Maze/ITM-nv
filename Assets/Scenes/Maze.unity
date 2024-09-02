@@ -275,7 +275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCam: {fileID: 519420031}
-  player: {fileID: 0}
+  player: {fileID: 958439829}
 --- !u!114 &519420035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,6 +382,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &958439829 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 774742636616830162, guid: b5e4eaafe010b694ab36d4382c9d3ce0, type: 3}
+  m_PrefabInstance: {fileID: 1464523559}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1260767440
 GameObject:
   m_ObjectHideFlags: 0

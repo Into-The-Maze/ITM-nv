@@ -13,4 +13,5 @@ public static class G
 
     public const float PLAYER_NECK_ROTATE_CONSTRAINT = 70f;
     public const float PLAYER_HIP_ROTATE_CONSTRAINT = 80f;
+    public const float PLAYER_FOOT_TURN_SPEED = 25f;
 }

@@ -27,8 +27,11 @@ public static class K
         }
     }
 
-    public static void InitKeybindsFromPlayerprefs()
-    {
+    public static void InitKeybindsFromPlayerprefs() {
         //todo
     } //updates dictionary to whatever is saved
+
+    public static void SaveKeybindsToPlayerprefs() {
+        //todo: self explanatory
+    }
 }

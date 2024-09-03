@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
 //Code that relates to the "bigger picture" should be called from here for clarity
@@ -14,5 +11,11 @@ public class MainHandler : MonoBehaviour
 
     private void Update() { 
 
+    }
+
+    private void MyDebug() {
+        if (Input.GetKeyDown(KeyCode.Alpha1)) {
+            //todo: generate debugging room, just some pillars to test shaders and other items when added
+        }
     }
 }

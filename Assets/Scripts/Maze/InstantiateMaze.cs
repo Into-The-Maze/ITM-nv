@@ -8,5 +8,7 @@ public class InstantiateMaze : MonoBehaviour
         //todo
     }
 
-
+    public void Instantiate(Room room) {
+        //todo
+    }
 }

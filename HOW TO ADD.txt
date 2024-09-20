@@ -1,0 +1,8 @@
+Entities - 
+	Add as prefab
+	Add to EntityLibrary script
+	Add name and dimensions to SDK
+Tilesets - 
+	Create Rule Tile
+	Add to TilesetLibrary script
+	Add name to SDK

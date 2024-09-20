@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class Maze
 {
-    List<Cell> cells;
+    Cell[,] cells;
     int width;
     int height;
 
@@ -15,4 +15,9 @@ public abstract class Maze
     public abstract void AddRoomsToMaze(string roomJSON);
     public abstract void AddPathsToMaze();
     public abstract void RemoveWallsFromMaze(int count);
+    public virtual void ResetVisitedCells() {
+        foreach (var cell in cells) {
+            cell.visited = false;
+        }
+    }
 }

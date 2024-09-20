@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private void MyDebug() {
+    private void DBG_DrawLookAngles() {
         //Debug.Log($"{Vector3.Angle(head.transform.up, torso.transform.up)}, {head.transform.rotation.eulerAngles}, {torso.transform.rotation.eulerAngles}, {legs.transform.rotation.eulerAngles}, {legsRotating} ");
         Debug.Log(Vector2.Angle(movementDirection, head.transform.rotation * Vector2.up));
         Debug.DrawRay(head.transform.position, head.transform.up, Color.red);
@@ -57,14 +57,13 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(backwards)) move.y = -1;
 
         movementDirection = move.normalized;
-        Vector2 targetVelocity = (move * PSTATS.PLAYER_SPEED).normalized;
 
-        
+        Vector2 targetVelocity = (move * PSTATS.PLAYER_SPEED).normalized;
 
         rb.velocity = (move != Vector2.zero) ? Vector2.Lerp(rb.velocity, targetVelocity, PSTATS.PLAYER_ACCELERATION * Time.deltaTime) :
             Vector2.Lerp(rb.velocity, Vector2.zero, PSTATS.PLAYER_DECELERATION * Time.deltaTime);
 
-    }//TODO: have G.SPEED be a const used in a separate speed stored in playerstats that is calculated by applying weighting from other stats. Use event system to have a live playerstats class that is updated on the stats changed event
+    }//todo: have G.SPEED be a const used in a separate speed stored in playerstats that is calculated by applying weighting from other stats. Use event system to have a live playerstats class that is updated on the stats changed event
 
     private bool legsRotating;
     private void HandleBodyVisuals() {

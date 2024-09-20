@@ -5,7 +5,11 @@ using Newtonsoft.Json;
 
 public class Room
 {
-    List<Cell> cells;
+    public Cell[,] cells;
+    public int width;
+    public int height;
+    public string name;
+    
 
     [JsonConstructor]
     public Room() { }

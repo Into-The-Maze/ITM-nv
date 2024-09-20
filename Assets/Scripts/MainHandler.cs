@@ -13,7 +13,7 @@ public class MainHandler : MonoBehaviour
 
     }
 
-    private void MyDebug() {
+    private void DBG_GenerateArea() {
         if (Input.GetKeyDown(KeyCode.Alpha1)) {
             //todo: generate debugging room, just some pillars to test shaders and other items when added
         }

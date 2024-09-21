@@ -311,6 +311,8 @@ GameObject:
   - component: {fileID: 576788110}
   - component: {fileID: 576788109}
   - component: {fileID: 576788108}
+  - component: {fileID: 576788112}
+  - component: {fileID: 576788111}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -358,6 +360,30 @@ Transform:
   - {fileID: 792240733}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &576788111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576788107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98e29759ce16b4d4c8c288a3c1461649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &576788112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576788107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c190659c542041e4387925b7ee60d967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &792240732
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,11 +605,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 774742636616830162, guid: b5e4eaafe010b694ab36d4382c9d3ce0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0019865185
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 774742636616830162, guid: b5e4eaafe010b694ab36d4382c9d3ce0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.068986885
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 774742636616830162, guid: b5e4eaafe010b694ab36d4382c9d3ce0, type: 3}
       propertyPath: m_LocalPosition.z

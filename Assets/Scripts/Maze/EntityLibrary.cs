@@ -6,9 +6,16 @@ using UnityEngine;
 
 public class EntityLibrary : MonoBehaviour
 {
+    public Dictionary<string, GameObject> entityLibrary;
+
     //Add public GameObject variables here to create an entity
+    public GameObject DBG_table;
 
-    public static Dictionary<string, GameObject> entityLibrary = new() {
+    private void Awake() {
+        entityLibrary = new Dictionary<string, GameObject>() {
+            { "DBG_table", DBG_table },
 
-    };
+        };
+    }
+
 }

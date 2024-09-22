@@ -1,7 +1,6 @@
 using Newtonsoft.Json;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class Cell
 {
@@ -9,7 +8,9 @@ public class Cell
     public int y;
     public int width;
     public bool visited;
+    public bool wall;
     public List<Entity> EntitiesToSpawn;
+    public string tilesetName;
 
     public Cell(int x, int y)
     {
@@ -17,6 +18,9 @@ public class Cell
         this.y = y;
         visited = false;
         width = 1;
+        wall = false;
+        EntitiesToSpawn = new();
+        tilesetName = string.Empty;
     }
 
     [JsonConstructor]
